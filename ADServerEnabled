@@ -1,0 +1,2 @@
+//Identify if the server is enabled in AD.
+Get-ADComputer -Filter {enabled -eq "true" -and name -Like '*<ServerName>*'}
